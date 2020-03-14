@@ -6,3 +6,7 @@ janet.html
 contact.html
 ar.html
 thermo.html
+crowdmotions.html
+additional projects.html
+additional involvements.html
+watlock.html
