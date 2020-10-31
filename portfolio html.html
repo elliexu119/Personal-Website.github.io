@@ -1,160 +1,163 @@
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
- 
- <style>
-  body {font-family: 'Montserrat';
-    }
-  /* Style the tab */
-  .tab {
-    overflow: hidden;
-    /*border: 1px solid #ccc;*/
-    background-color: #f1f1f1;
-  }
-  /* Style the buttons inside the tab */
-  .tab button {
-  	display: table-cell;
-  	font-family: 'Montserrat';
-    background-color: inherit;
-    float: center;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 14px;
-    transition: 0.3s;
-    font-size: 1vw;
-    font-weight: bold;
-    color: grey;
-  }
-  
-  #defaultOpen, #c2, #c3{
-  	float: left;
-    width: 33.33%;
-	}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
 
-  /* Change background color of buttons on hover */
-  .tab button:hover {
-    background-color: #ddd;
-  }
-  /* Create an active/current tablink class */
-  .tab button.active {
-    background-color: #ccc;
-    color: black;
-  }
-  /* Style the tab content */
-  .tabcontent {
-  	background-color: white;
-    display: none;
-    width:100%;
-    border-top: none;
-	margin-bottom: 100px; 
-  }
-  
-  .container {
-    position: relative;
-  }
+    <style>
+        body {
+            font-family: 'Montserrat';
+        }
+        /* Style the tab */
+        .tab {
+            overflow: hidden;
+            /*border: 1px solid #ccc;*/
+            background-color: #f1f1f1;
+        }
+            /* Style the buttons inside the tab */
+            .tab button {
+                display: table-cell;
+                font-family: 'Montserrat';
+                background-color: inherit;
+                float: center;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                padding: 14px 14px;
+                transition: 0.3s;
+                font-size: 1vw;
+                font-weight: bold;
+                color: grey;
+            }
 
-  .overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: auto;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: white;
-  }
+        #defaultOpen, #c2, #c3 {
+            float: left;
+            width: 33.33%;
+        }
 
-  .container:hover .overlay {
-    opacity: .9;
-  }
+        /* Change background color of buttons on hover */
+        .tab button:hover {
+            background-color: #ddd;
+        }
+        /* Create an active/current tablink class */
+        .tab button.active {
+            background-color: #ccc;
+            color: black;
+        }
+        /* Style the tab content */
+        .tabcontent {
+            background-color: white;
+            display: none;
+            width: 100%;
+            border-top: none;
+            margin-bottom: 100px;
+        }
 
-  .textbox{
-  	line-height: 1.5;
-    margin: 10px;
-    font-family: 'Montserrat';
-    position: relative;
-    display:block;
-    top: 30%;
-    text-align: center;
-    }
-    
-  .text {
-    color: black;
-    font-weight: bold;
-    font-size: 1.25vw;
-    position: relative;
-  }
-  
-  .smoltext {
-    color: black;
-    font-size: 0.75vw;
-    position: relative;
-  }
-  
-.button {
-	position = relative;
-	left: 50%;
-	-ms-transform: translateX(-50%);
-	transform: translateX(-50%);
-	position: absolute;
+        .container {
+            position: relative;
+        }
 
-	background-color: #ddd;
-	border: none;
-	font-size: 1.5vw;
-	font-family: 'Montserrat';
-	color: black;
-	padding: 15px 32px;
-	text-decoration: none;
-	display: inline-block;
-	width: 80%;
-	font-size: 1vw;
-	margin: 4px 2px;
-	cursor: pointer;	
-}
+        .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            height: auto;
+            opacity: 0;
+            transition: .5s ease;
+            background-color: white;
+        }
 
+        .container:hover .overlay {
+            opacity: .9;
+        }
 
-.row {
-  display: -ms-flexbox; /* IE10 */
-  display: flex;
-  -ms-flex-wrap: wrap; /* IE10 */
-  flex-wrap: wrap;
-  padding: 0 4px;
-}
-.column {
-  max-width: 33.333%;
-  padding: 0 4px;
-}
+        .textbox {
+            line-height: 1.5;
+            margin: 10px;
+            font-family: 'Montserrat';
+            position: relative;
+            display: block;
+            top: 30%;
+            text-align: center;
+        }
 
-.column img {
-  margin-top: 8px;
-  vertical-align: middle;
-  width: 100%;
-}
+        .text {
+            color: black;
+            font-weight: bold;
+            font-size: 1.25vw;
+            position: relative;
+        }
 
-@media (max-width: 400px) {
-	.column  {
-		max-width: 100%;
-	}
-	.text{
-		font-size: 7vw;
-	}
-	.smoltext{
-		font-size: 3vw;
-	}
-	.tab button {
-		font-size: 2.5vw;
-	}
-	.button {
-		font-size: 2.5vw; 
-	}
-}
+        .smoltext {
+            color: black;
+            font-size: 0.75vw;
+            position: relative;
+        }
+
+        .button {
+            position = relative;
+            left: 50%;
+            -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+            position: absolute;
+            background-color: #ddd;
+            border: none;
+            font-size: 1.5vw;
+            font-family: 'Montserrat';
+            color: black;
+            padding: 15px 32px;
+            text-decoration: none;
+            display: inline-block;
+            width: 80%;
+            font-size: 1vw;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
 
 
-</style>
+        .row {
+            display: -ms-flexbox; /* IE10 */
+            display: flex;
+            -ms-flex-wrap: wrap; /* IE10 */
+            flex-wrap: wrap;
+            padding: 0 4px;
+        }
+
+        .column {
+            max-width: 33.333%;
+            padding: 0 4px;
+        }
+
+            .column img {
+                margin-top: 8px;
+                vertical-align: middle;
+                width: 100%;
+            }
+
+        @media (max-width: 400px) {
+            .column {
+                max-width: 100%;
+            }
+
+            .text {
+                font-size: 7vw;
+            }
+
+            .smoltext {
+                font-size: 3vw;
+            }
+
+            .tab button {
+                font-size: 2.5vw;
+            }
+
+            .button {
+                font-size: 2.5vw;
+            }
+        }
+    </style>
 </head>
 
 <a target="_blank" href="https://www.elliexu.com/ops" id='ops'>
@@ -170,644 +173,644 @@
     </div>
 </a>
 
-<a target="_blank" href="https://www.elliexu.com/codia" id = 'codia'>
-	<div class="container">
-		<img src="https://github.com/elliexu119/Personal-Website/blob/master/portfolio%20pictures/icon%20v2/codia.png?raw=true" alt="Avatar" class="image">
-		<div class="overlay">
-			<div class = "textbox"> 
-				<div class="text">CODIA</div>
-				<div class="smoltext">Electrical · Mechanical · Software</div>
-				<div class="smoltext">Click to see more</div>
-			</div>
-		</div>
-	</div>
+<a target="_blank" href="https://www.elliexu.com/codia" id='codia'>
+    <div class="container">
+        <img src="https://github.com/elliexu119/Personal-Website/blob/master/portfolio%20pictures/icon%20v2/codia.png?raw=true" alt="Avatar" class="image">
+        <div class="overlay">
+            <div class="textbox">
+                <div class="text">CODIA</div>
+                <div class="smoltext">Electrical · Mechanical · Software</div>
+                <div class="smoltext">Click to see more</div>
+            </div>
+        </div>
+    </div>
 </a>
-<a target="_blank" href="https://www.elliexu.com/first-robotics" id = 'frc'>
-  <div class="container">
-	<img src="https://github.com/elliexu119/Personal-Website/blob/master/portfolio%20pictures/icon%20v2/frc.png?raw=true" alt="Avatar" class="image">
-	<div class="overlay">
-	  <div class = "textbox"> 
-		<div class="text">FIRST Robotics</div>
-		<div class="smoltext">Mechanical</div>
-		<div class="smoltext">Click to see more</div>
-	  </div>
-	</div>
-  </div>
-</a>
-
-<a target="_blank" href="https://www.elliexu.com/cuckoos" id = 'cuckoos'>
-  <div class="container">
-	<img src="https://github.com/elliexu119/Personal-Website/blob/master/portfolio%20pictures/icon%20v2/cuckoos.png?raw=true" alt="Avatar" class="image">
-	<div class="overlay">
-	  <div class = "textbox"> 
-		<div class="text">Cuckoos: Twitter Analyzer</div>
-		<div class="smoltext">Software</div>
-		<div class="smoltext">Click to see more</div>
-	  </div>
-	</div>
-  </div>
+<a target="_blank" href="https://www.elliexu.com/first-robotics" id='frc'>
+    <div class="container">
+        <img src="https://github.com/elliexu119/Personal-Website/blob/master/portfolio%20pictures/icon%20v2/frc.png?raw=true" alt="Avatar" class="image">
+        <div class="overlay">
+            <div class="textbox">
+                <div class="text">FIRST Robotics</div>
+                <div class="smoltext">Mechanical</div>
+                <div class="smoltext">Click to see more</div>
+            </div>
+        </div>
+    </div>
 </a>
 
-<a target="_blank" href="https://www.elliexu.com/thermoelectric-3-in-1" id = 'thermo'>
-  <div class="container">
-	<img src="https://github.com/elliexu119/Personal-Website/blob/master/portfolio%20pictures/icon%20v2/thermo.png?raw=true" alt="Avatar" class="image">
-	<div class="overlay">
-	  <div class = "textbox"> 
-		<div class="text">Thermoelectric 3-in-1</div>
-		<div class="smoltext">Electrical · Software</div>
-		<div class="smoltext">Click to see more</div>
-	  </div>
-	</div>
-  </div>
+<a target="_blank" href="https://www.elliexu.com/cuckoos" id='cuckoos'>
+    <div class="container">
+        <img src="https://github.com/elliexu119/Personal-Website/blob/master/portfolio%20pictures/icon%20v2/cuckoos.png?raw=true" alt="Avatar" class="image">
+        <div class="overlay">
+            <div class="textbox">
+                <div class="text">Cuckoos: Twitter Analyzer</div>
+                <div class="smoltext">Software</div>
+                <div class="smoltext">Click to see more</div>
+            </div>
+        </div>
+    </div>
 </a>
 
-<a target="_blank" href="https://www.elliexu.com/ar-navigation" id = 'ar'>
-  <div class="container">
-	<img src="https://github.com/elliexu119/Personal-Website/blob/master/portfolio%20pictures/icon%20v2/ar.png?raw=true" alt="Avatar" class="image">
-	<div class="overlay">
-	  <div class = "textbox"> 
-		<div class="text">AR Navigation</div>
-		<div class="smoltext">Software</div>
-		<div class="smoltext">Click to see more</div>
-	  </div>
-	</div>
-  </div>
+<a target="_blank" href="https://www.elliexu.com/thermoelectric-3-in-1" id='thermo'>
+    <div class="container">
+        <img src="https://github.com/elliexu119/Personal-Website/blob/master/portfolio%20pictures/icon%20v2/thermo.png?raw=true" alt="Avatar" class="image">
+        <div class="overlay">
+            <div class="textbox">
+                <div class="text">Thermoelectric 3-in-1</div>
+                <div class="smoltext">Electrical · Software</div>
+                <div class="smoltext">Click to see more</div>
+            </div>
+        </div>
+    </div>
 </a>
 
-<a target="_blank" href="https://www.elliexu.com/crowdmotions" id = 'crowdmotions'>
-  <div class="container">
-	<img src="https://github.com/elliexu119/Personal-Website/blob/master/portfolio%20pictures/icon%20v2/crowdmotions.png?raw=true" alt="Avatar" class="image">
-	<div class="overlay">
-	  <div class = "textbox"> 
-		<div class="text">Crowd Motions: Smart Review Web Scraper</div>
-		<div class="smoltext">Software</div>
-		<div class="smoltext">Click to see more</div>
-	  </div>
-	</div>
-  </div>
+<a target="_blank" href="https://www.elliexu.com/ar-navigation" id='ar'>
+    <div class="container">
+        <img src="https://github.com/elliexu119/Personal-Website/blob/master/portfolio%20pictures/icon%20v2/ar.png?raw=true" alt="Avatar" class="image">
+        <div class="overlay">
+            <div class="textbox">
+                <div class="text">AR Navigation</div>
+                <div class="smoltext">Software</div>
+                <div class="smoltext">Click to see more</div>
+            </div>
+        </div>
+    </div>
 </a>
 
-<a target="_blank" href="https://www.elliexu.com/booking-project" id = 'booking'>
-  <div class="container">
-	<img src="https://github.com/elliexu119/Personal-Website/blob/master/portfolio%20pictures/icon%20v2/booking.png?raw=true" alt="Avatar" class="image">
-	<div class="overlay">
-	  <div class = "textbox"> 
-		<div class="text">Booking Program</div>
-		<div class="smoltext">Software</div>
-		<div class="smoltext">Click to see more</div>
-	  </div>
-	</div>
-  </div>
+<a target="_blank" href="https://www.elliexu.com/crowdmotions" id='crowdmotions'>
+    <div class="container">
+        <img src="https://github.com/elliexu119/Personal-Website/blob/master/portfolio%20pictures/icon%20v2/crowdmotions.png?raw=true" alt="Avatar" class="image">
+        <div class="overlay">
+            <div class="textbox">
+                <div class="text">Crowd Motions: Smart Review Web Scraper</div>
+                <div class="smoltext">Software</div>
+                <div class="smoltext">Click to see more</div>
+            </div>
+        </div>
+    </div>
 </a>
 
-<a target="_blank" href="https://www.elliexu.com/stock-simulator" id = 'stock'>
-  <div class="container">
-	<img src="https://github.com/elliexu119/Personal-Website/blob/master/portfolio%20pictures/icon%20v2/stock.png?raw=true" alt="Avatar" class="image">
-	<div class="overlay">
-	  <div class = "textbox"> 
-		<div class="text">Tulip & Carnation: Stock Simulators</div>
-		<div class="smoltext">Software</div>
-		<div class="smoltext">Click to see more</div>
-	  </div>
-	</div>
-  </div>
+<a target="_blank" href="https://www.elliexu.com/booking-project" id='booking'>
+    <div class="container">
+        <img src="https://github.com/elliexu119/Personal-Website/blob/master/portfolio%20pictures/icon%20v2/booking.png?raw=true" alt="Avatar" class="image">
+        <div class="overlay">
+            <div class="textbox">
+                <div class="text">Booking Program</div>
+                <div class="smoltext">Software</div>
+                <div class="smoltext">Click to see more</div>
+            </div>
+        </div>
+    </div>
 </a>
 
-<a target="_blank" href="https://www.elliexu.com/2048" id = '2048'>
-  <div class="container">
-	<img src="https://github.com/elliexu119/Personal-Website/blob/master/portfolio%20pictures/icon%20v2/2048.png?raw=true" alt="Avatar" class="image">
-	<div class="overlay">
-	  <div class = "textbox"> 
-		<div class="text">2048</div>
-		<div class="smoltext">Software</div>
-		<div class="smoltext">Click to see more</div>
-	  </div>
-	</div>
-  </div>
+<a target="_blank" href="https://www.elliexu.com/stock-simulator" id='stock'>
+    <div class="container">
+        <img src="https://github.com/elliexu119/Personal-Website/blob/master/portfolio%20pictures/icon%20v2/stock.png?raw=true" alt="Avatar" class="image">
+        <div class="overlay">
+            <div class="textbox">
+                <div class="text">Tulip & Carnation: Stock Simulators</div>
+                <div class="smoltext">Software</div>
+                <div class="smoltext">Click to see more</div>
+            </div>
+        </div>
+    </div>
 </a>
 
-<a target="_blank" href="https://www.elliexu.com/janet---virtual-personal-shopping-assistant" id = 'shopping'>
-  <div class="container">
-	<img src="https://github.com/elliexu119/Personal-Website/blob/master/portfolio%20pictures/icon%20v2/janet%20.png?raw=true" alt="Avatar" class="image">
-	<div class="overlay">
-	  <div class = "textbox"> 
-		<div class="text">Virtual Personal Shopping Assistant</div>
-		<div class="smoltext">Software · Electrical</div>
-		<div class="smoltext">Click to see more</div>
-	  </div>
-	</div>
-  </div>
+<a target="_blank" href="https://www.elliexu.com/2048" id='2048'>
+    <div class="container">
+        <img src="https://github.com/elliexu119/Personal-Website/blob/master/portfolio%20pictures/icon%20v2/2048.png?raw=true" alt="Avatar" class="image">
+        <div class="overlay">
+            <div class="textbox">
+                <div class="text">2048</div>
+                <div class="smoltext">Software</div>
+                <div class="smoltext">Click to see more</div>
+            </div>
+        </div>
+    </div>
 </a>
 
-<a target="_blank" href="https://www.elliexu.com/watLock" id = 'watlock'>
-  <div class="container">
-	<img src="https://github.com/elliexu119/Personal-Website/blob/master/portfolio%20pictures/icon%20v2/watlock.png?raw=true" alt="Avatar" class="image">
-	<div class="overlay">
-	  <div class = "textbox"> 
-		<div class="text">WatLock</div>
-		<div class="smoltext">Mechanical</div>
-		<div class="smoltext">Click to see more</div>
-	  </div>
-	</div>
-  </div>
+<a target="_blank" href="https://www.elliexu.com/janet---virtual-personal-shopping-assistant" id='shopping'>
+    <div class="container">
+        <img src="https://github.com/elliexu119/Personal-Website/blob/master/portfolio%20pictures/icon%20v2/janet%20.png?raw=true" alt="Avatar" class="image">
+        <div class="overlay">
+            <div class="textbox">
+                <div class="text">Virtual Personal Shopping Assistant</div>
+                <div class="smoltext">Software · Electrical</div>
+                <div class="smoltext">Click to see more</div>
+            </div>
+        </div>
+    </div>
 </a>
 
-<a target="_blank" href="https://www.elliexu.com/tedx" id = 'tedx'>
-  <div class="container">
-	<img src="https://github.com/elliexu119/Personal-Website/blob/master/portfolio%20pictures/icon%20v2/tedx.png?raw=true" alt="Avatar" class="image">
-	<div class="overlay">
-	  <div class = "textbox"> 
-		<div class="text">TEDx Speaker</div>
-		<div class="smoltext">Click to see more</div>
-	  </div>
-	</div>
-  </div>
+<a target="_blank" href="https://www.elliexu.com/watLock" id='watlock'>
+    <div class="container">
+        <img src="https://github.com/elliexu119/Personal-Website/blob/master/portfolio%20pictures/icon%20v2/watlock.png?raw=true" alt="Avatar" class="image">
+        <div class="overlay">
+            <div class="textbox">
+                <div class="text">WatLock</div>
+                <div class="smoltext">Mechanical</div>
+                <div class="smoltext">Click to see more</div>
+            </div>
+        </div>
+    </div>
 </a>
 
-<a target="_blank" href="https://www.elliexu.com/light-flicker" id = 'light flicker'>
-  <div class="container">
-	<img src="https://github.com/elliexu119/Personal-Website/blob/master/portfolio%20pictures/icon%20v2/light%20flicker.png?raw=true" alt="Avatar" class="image">
-	<div class="overlay">
-	  <div class = "textbox"> 
-		<div class="text">Light Flicker</div>
-		<div class="smoltext">Arduino</div>
-		<div class="smoltext">Click to see more</div>
-	  </div>
-	</div>
-  </div>
+<a target="_blank" href="https://www.elliexu.com/tedx" id='tedx'>
+    <div class="container">
+        <img src="https://github.com/elliexu119/Personal-Website/blob/master/portfolio%20pictures/icon%20v2/tedx.png?raw=true" alt="Avatar" class="image">
+        <div class="overlay">
+            <div class="textbox">
+                <div class="text">TEDx Speaker</div>
+                <div class="smoltext">Click to see more</div>
+            </div>
+        </div>
+    </div>
 </a>
 
-<a target="_blank" href="https://www.elliexu.com/mountain-paths" id = 'mountain-paths'>
-  <div class="container">
-	<img src="https://github.com/elliexu119/Personal-Website/blob/master/portfolio%20pictures/icon%20v2/mountain.png?raw=true" alt="Avatar" class="image">
-	<div class="overlay">
-	  <div class = "textbox"> 
-		<div class="text">Mountain Paths</div>
-		<div class="smoltext">Software</div>
-		<div class="smoltext">Click to see more</div>
-	  </div>
-	</div>
-  </div>
+<a target="_blank" href="https://www.elliexu.com/light-flicker" id='light flicker'>
+    <div class="container">
+        <img src="https://github.com/elliexu119/Personal-Website/blob/master/portfolio%20pictures/icon%20v2/light%20flicker.png?raw=true" alt="Avatar" class="image">
+        <div class="overlay">
+            <div class="textbox">
+                <div class="text">Light Flicker</div>
+                <div class="smoltext">Arduino</div>
+                <div class="smoltext">Click to see more</div>
+            </div>
+        </div>
+    </div>
 </a>
 
-<a target="_blank" href="https://www.elliexu.com/webid" id = 'webid'>
-  <div class="container">
-	<img src="https://github.com/elliexu119/Personal-Website/blob/master/portfolio%20pictures/icon%20v2/candy.png?raw=true" alt="Avatar" class="image">
-	<div class="overlay">
-	  <div class = "textbox"> 
-		<div class="text">Web ID</div>
-		<div class="smoltext">Electrical</div>
-		<div class="smoltext">Click to see more</div>
-	  </div>
-	</div>
-  </div>
+<a target="_blank" href="https://www.elliexu.com/mountain-paths" id='mountain-paths'>
+    <div class="container">
+        <img src="https://github.com/elliexu119/Personal-Website/blob/master/portfolio%20pictures/icon%20v2/mountain.png?raw=true" alt="Avatar" class="image">
+        <div class="overlay">
+            <div class="textbox">
+                <div class="text">Mountain Paths</div>
+                <div class="smoltext">Software</div>
+                <div class="smoltext">Click to see more</div>
+            </div>
+        </div>
+    </div>
 </a>
 
-<a target="_blank" href="https://www.elliexu.com/toycar" id = 'toycar'>
-  <div class="container">
-	<img src="https://github.com/elliexu119/Personal-Website/blob/master/portfolio%20pictures/icon%20v2/car.png?raw=true" alt="Avatar" class="image">
-	<div class="overlay">
-	  <div class = "textbox"> 
-		<div class="text">Toy Car</div>
-		<div class="smoltext">Electrical</div>
-		<div class="smoltext">Click to see more</div>
-	  </div>
-	</div>
-  </div>
+<a target="_blank" href="https://www.elliexu.com/webid" id='webid'>
+    <div class="container">
+        <img src="https://github.com/elliexu119/Personal-Website/blob/master/portfolio%20pictures/icon%20v2/candy.png?raw=true" alt="Avatar" class="image">
+        <div class="overlay">
+            <div class="textbox">
+                <div class="text">Web ID</div>
+                <div class="smoltext">Electrical</div>
+                <div class="smoltext">Click to see more</div>
+            </div>
+        </div>
+    </div>
 </a>
 
-<a target="_blank" href="https://www.elliexu.com/encryption" id = 'encryption'>
-  <div class="container">
-	<img src="https://github.com/elliexu119/Personal-Website/blob/master/portfolio%20pictures/icon%20v2/enigma%20.png?raw=true" alt="Avatar" class="image">
-	<div class="overlay">
-	  <div class = "textbox"> 
-		<div class="text">Enigma Writer</div>
-		<div class="smoltext">Mechanical · Software · Electrical</div>
-		<div class="smoltext">Click to see more</div>
-	  </div>
-	</div>
-	</div>
-  </div>
+<a target="_blank" href="https://www.elliexu.com/toycar" id='toycar'>
+    <div class="container">
+        <img src="https://github.com/elliexu119/Personal-Website/blob/master/portfolio%20pictures/icon%20v2/car.png?raw=true" alt="Avatar" class="image">
+        <div class="overlay">
+            <div class="textbox">
+                <div class="text">Toy Car</div>
+                <div class="smoltext">Electrical</div>
+                <div class="smoltext">Click to see more</div>
+            </div>
+        </div>
+    </div>
 </a>
 
-<a target="_blank" href="https://www.elliexu.com/good-doggo" id = 'good-doggo'>
-  <div class="container">
-	<img src="https://github.com/elliexu119/Personal-Website/blob/master/portfolio%20pictures/icon%20v2/good%20doggo.png?raw=true" alt="Avatar" class="image">
-	<div class="overlay">
-	  <div class = "textbox"> 
-		<div class="text">Good Doggo</div>
-		<div class="smoltext">Mechanical · Electrical</div>
-		<div class="smoltext">Click to see more</div>
-	  </div>
-	</div>
-  </div>
+<a target="_blank" href="https://www.elliexu.com/encryption" id='encryption'>
+    <div class="container">
+        <img src="https://github.com/elliexu119/Personal-Website/blob/master/portfolio%20pictures/icon%20v2/enigma%20.png?raw=true" alt="Avatar" class="image">
+        <div class="overlay">
+            <div class="textbox">
+                <div class="text">Enigma Writer</div>
+                <div class="smoltext">Mechanical · Software · Electrical</div>
+                <div class="smoltext">Click to see more</div>
+            </div>
+        </div>
+    </div>
+    </div>
 </a>
 
-<a target="_blank" href="https://www.elliexu.com/aoms" id = 'aoms'>
-  <div class="container">
-	<img src="https://github.com/elliexu119/Personal-Website/blob/master/portfolio%20pictures/icon%20v2/aoms.png?raw=true" alt="Avatar" class="image">
-	<div class="overlay">
-	  <div class = "textbox"> 
-		<div class="text">Hardware Engineer</div>
-		<div class="smoltext">AOMS Technologies</div>
-		<div class="smoltext">Click to see more</div>
-	  </div>
-	</div>
-  </div>
+<a target="_blank" href="https://www.elliexu.com/good-doggo" id='good-doggo'>
+    <div class="container">
+        <img src="https://github.com/elliexu119/Personal-Website/blob/master/portfolio%20pictures/icon%20v2/good%20doggo.png?raw=true" alt="Avatar" class="image">
+        <div class="overlay">
+            <div class="textbox">
+                <div class="text">Good Doggo</div>
+                <div class="smoltext">Mechanical · Electrical</div>
+                <div class="smoltext">Click to see more</div>
+            </div>
+        </div>
+    </div>
 </a>
 
-<a target="_blank" href="https://www.elliexu.com/stem" id = 'stem'>
-  <div class="container">
-	<img src="https://github.com/elliexu119/Personal-Website/blob/master/portfolio%20pictures/icon%20v2/stem.png?raw=true" alt="Avatar" class="image">
-	<div class="overlay">
-	  <div class = "textbox"> 
-		<div class="text">STEM Club</div>
-		<div class="smoltext">Co-Founder and Co-President</div>
-		<div class="smoltext">Click to see more</div>
-	  </div>
-	</div>
-  </div>
+<a target="_blank" href="https://www.elliexu.com/aoms" id='aoms'>
+    <div class="container">
+        <img src="https://github.com/elliexu119/Personal-Website/blob/master/portfolio%20pictures/icon%20v2/aoms.png?raw=true" alt="Avatar" class="image">
+        <div class="overlay">
+            <div class="textbox">
+                <div class="text">Hardware Engineer</div>
+                <div class="smoltext">AOMS Technologies</div>
+                <div class="smoltext">Click to see more</div>
+            </div>
+        </div>
+    </div>
 </a>
 
-<a target="_blank" href="https://www.elliexu.com/basef" id = 'basef'>
-  <div class="container">
-	<img src="https://github.com/elliexu119/Personal-Website/blob/master/portfolio%20pictures/icon%20v2/basef.png?raw=true" alt="Avatar" class="image">
-	<div class="overlay">
-	  <div class = "textbox"> 
-		<div class="text">BASEF Club</div>
-		<div class="smoltext">Co-Founder</div>
-		<div class="smoltext">Click to see more</div>
-	  </div>
-	</div>
-  </div>
+<a target="_blank" href="https://www.elliexu.com/stem" id='stem'>
+    <div class="container">
+        <img src="https://github.com/elliexu119/Personal-Website/blob/master/portfolio%20pictures/icon%20v2/stem.png?raw=true" alt="Avatar" class="image">
+        <div class="overlay">
+            <div class="textbox">
+                <div class="text">STEM Club</div>
+                <div class="smoltext">Co-Founder and Co-President</div>
+                <div class="smoltext">Click to see more</div>
+            </div>
+        </div>
+    </div>
 </a>
 
-<a target="_blank" href="https://www.elliexu.com/hosa" id = 'hosa'>
-  <div class="container">
-	<img src="https://github.com/elliexu119/Personal-Website/blob/master/portfolio%20pictures/icon%20v2/hosa.png?raw=true" alt="Avatar" class="image">
-	<div class="overlay">
-	  <div class = "textbox"> 
-		<div class="text">HOSA: Future Health Professionals</div>
-		<div class="smoltext">Founder & President</div>
-		<div class="smoltext">Click to see more</div>
-	  </div>
-	</div>
-  </div>
+<a target="_blank" href="https://www.elliexu.com/basef" id='basef'>
+    <div class="container">
+        <img src="https://github.com/elliexu119/Personal-Website/blob/master/portfolio%20pictures/icon%20v2/basef.png?raw=true" alt="Avatar" class="image">
+        <div class="overlay">
+            <div class="textbox">
+                <div class="text">BASEF Club</div>
+                <div class="smoltext">Co-Founder</div>
+                <div class="smoltext">Click to see more</div>
+            </div>
+        </div>
+    </div>
 </a>
 
-<a target="_blank" href="https://www.elliexu.com/science-council" id = 'science_council'>
-  <div class="container">
-	<img src="https://github.com/elliexu119/Personal-Website/blob/master/portfolio%20pictures/icon%20v2/science%20council.png?raw=true" alt="Avatar" class="image">
-	<div class="overlay">
-	  <div class = "textbox"> 
-		<div class="text">Science Council</div>
-		<div class="smoltext">Co-President</div>
-		<div class="smoltext">Click to see more</div>
-	  </div>
-	</div>
-  </div>
+<a target="_blank" href="https://www.elliexu.com/hosa" id='hosa'>
+    <div class="container">
+        <img src="https://github.com/elliexu119/Personal-Website/blob/master/portfolio%20pictures/icon%20v2/hosa.png?raw=true" alt="Avatar" class="image">
+        <div class="overlay">
+            <div class="textbox">
+                <div class="text">HOSA: Future Health Professionals</div>
+                <div class="smoltext">Founder & President</div>
+                <div class="smoltext">Click to see more</div>
+            </div>
+        </div>
+    </div>
 </a>
 
-<a target="_blank" href="https://www.elliexu.com/clinic" id = 'clinic'>
-  <div class="container">
-	<img src="https://github.com/elliexu119/Personal-Website/blob/master/portfolio%20pictures/icon%20v2/clinic.png?raw=true" alt="Avatar" class="image">
-	<div class="overlay">
-	  <div class = "textbox"> 
-		<div class="text">Internship</div>
-		<div class="smoltext">Wentworth-Halton X-ray and Ultrasound</div>
-		<div class="smoltext">Click to see more</div>
-	  </div>
-	</div>
-  </div>
+<a target="_blank" href="https://www.elliexu.com/science-council" id='science_council'>
+    <div class="container">
+        <img src="https://github.com/elliexu119/Personal-Website/blob/master/portfolio%20pictures/icon%20v2/science%20council.png?raw=true" alt="Avatar" class="image">
+        <div class="overlay">
+            <div class="textbox">
+                <div class="text">Science Council</div>
+                <div class="smoltext">Co-President</div>
+                <div class="smoltext">Click to see more</div>
+            </div>
+        </div>
+    </div>
 </a>
 
-<a target="_blank" href="https://www.elliexu.com/tutor" id = 'tutor'>
-  <div class="container">
-	<img src="https://github.com/elliexu119/Personal-Website/blob/master/portfolio%20pictures/icon%20v2/tutor.png?raw=true" alt="Avatar" class="image">
-	<div class="overlay">
-	  <div class = "textbox"> 
-		<div class="text">Math/Science Tutor</div>
-		<div class="smoltext">Click to see more</div>
-	  </div>
-	</div>
-  </div>
+<a target="_blank" href="https://www.elliexu.com/clinic" id='clinic'>
+    <div class="container">
+        <img src="https://github.com/elliexu119/Personal-Website/blob/master/portfolio%20pictures/icon%20v2/clinic.png?raw=true" alt="Avatar" class="image">
+        <div class="overlay">
+            <div class="textbox">
+                <div class="text">Internship</div>
+                <div class="smoltext">Wentworth-Halton X-ray and Ultrasound</div>
+                <div class="smoltext">Click to see more</div>
+            </div>
+        </div>
+    </div>
 </a>
 
-<a target="_blank" href="https://www.elliexu.com/tictactoe" id = 'tictactoe'>
-  <div class="container">
-	<img src="https://github.com/elliexu119/Personal-Website/blob/master/portfolio%20pictures/tictactoe.jpg?raw=true" alt="Avatar" class="image">
-	<div class="overlay">
-	  <div class = "textbox"> 
-		<div class="text">Tic Tac Toe</div>
-		<div class="smoltext">Click to see more</div>
-	  </div>
-	</div>
-  </div>
+<a target="_blank" href="https://www.elliexu.com/tutor" id='tutor'>
+    <div class="container">
+        <img src="https://github.com/elliexu119/Personal-Website/blob/master/portfolio%20pictures/icon%20v2/tutor.png?raw=true" alt="Avatar" class="image">
+        <div class="overlay">
+            <div class="textbox">
+                <div class="text">Math/Science Tutor</div>
+                <div class="smoltext">Click to see more</div>
+            </div>
+        </div>
+    </div>
+</a>
+
+<a target="_blank" href="https://www.elliexu.com/tictactoe" id='tictactoe'>
+    <div class="container">
+        <img src="https://github.com/elliexu119/Personal-Website/blob/master/portfolio%20pictures/tictactoe.jpg?raw=true" alt="Avatar" class="image">
+        <div class="overlay">
+            <div class="textbox">
+                <div class="text">Tic Tac Toe</div>
+                <div class="smoltext">Click to see more</div>
+            </div>
+        </div>
+    </div>
 </a>
 
 
 <div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'All')" id="defaultOpen">
-   All
-  </button>
-  <button class="tablinks" onclick="openCity(event, 'Projects')" id="c2">
-   Projects
-  </button>
-  <button class="tablinks" onclick="openCity(event, 'Involvements')" id="c3">
-   Involvements
-  </button>
+    <button class="tablinks" onclick="openCity(event, 'All')" id="defaultOpen">
+        All
+    </button>
+    <button class="tablinks" onclick="openCity(event, 'Projects')" id="c2">
+        Projects
+    </button>
+    <button class="tablinks" onclick="openCity(event, 'Involvements')" id="c3">
+        Involvements
+    </button>
 </div>
 
 <div id="All" class="tabcontent">
-	<div class="row"> 
-		<div class="column" id = 'allcol1'></div>
-		<div class="column" id = 'allcol2'></div>
-		<div class="column" id = 'allcol3'></div>
-	</div>
-	<p> </p>
-	<button class = 'button' onclick="button1()" id = 'loadmore1'>Load More</button>
+    <div class="row">
+        <div class="column" id='allcol1'></div>
+        <div class="column" id='allcol2'></div>
+        <div class="column" id='allcol3'></div>
+    </div>
+    <p> </p>
+    <button class='button' onclick="button1()" id='loadmore1'>Load More</button>
 </div>
 
 
 <div id="Projects" class="tabcontent">
-	<div class="row"> 
-		<div class="column" id = 'projcol1'></div>
-		<div class="column" id = 'projcol2'></div>
-		<div class="column" id = 'projcol3'></div>
-	</div>
-	<p> </p>
-	<button class = 'button' onclick="button2()" id = 'loadmore2'>Load More</button>
+    <div class="row">
+        <div class="column" id='projcol1'></div>
+        <div class="column" id='projcol2'></div>
+        <div class="column" id='projcol3'></div>
+    </div>
+    <p> </p>
+    <button class='button' onclick="button2()" id='loadmore2'>Load More</button>
 </div>
 
 
 <div id="Involvements" class="tabcontent">
-	<div class="row"> 
-		<div class="column" id = 'invcol1'></div>
-		<div class="column" id = 'invcol2'></div>
-		<div class="column" id = 'invcol3'></div>
-	</div>
-	<p> </p>
-	<button class = 'button' onclick="button3()" id = 'loadmore3'>Load More</button>
+    <div class="row">
+        <div class="column" id='invcol1'></div>
+        <div class="column" id='invcol2'></div>
+        <div class="column" id='invcol3'></div>
+    </div>
+    <p> </p>
+    <button class='button' onclick="button3()" id='loadmore3'>Load More</button>
 </div>
- 
- 
- <script>
- document.getElementById("defaultOpen").click();
- if (window.innerWidth < 400) smalltabs("All");
- else tabs("All"); 
- //openCity(event, "All");
- 
-function tabs(i) {
-	if (i == "All") tab1func();
-	else if (i == "Projects")tab2func();
-	else if (i == 'Involvements')tab3func(); 
-}
+</html>
 
-function smalltabs(i) {
-	if (i == "All")smalltab1();
-	else if (i == "Projects")smalltab2();
-	else if (i == 'Involvements')smalltab3(); 
-}
-  
-function tab1func(){
-	var tab = 'allcol1';
-    document.getElementById(tab).appendChild(document.getElementById('codia'));
-    document.getElementById(tab).appendChild(document.getElementById('frc'));
-	document.getElementById(tab).appendChild(document.getElementById('thermo'));
-	document.getElementById(tab).appendChild(document.getElementById('ar'));
-	document.getElementById(tab).appendChild(document.getElementById('tedx'));
-	document.getElementById(tab).appendChild(document.getElementById('webid'));
-	document.getElementById(tab).appendChild(document.getElementById('stem'));
-	document.getElementById(tab).appendChild(document.getElementById('good-doggo'));
-	document.getElementById(tab).appendChild(document.getElementById('light flicker'));
-	var tab = 'allcol2';
-	document.getElementById(tab).appendChild(document.getElementById('aoms'));
-	document.getElementById(tab).appendChild(document.getElementById('crowdmotions'));
-	document.getElementById(tab).appendChild(document.getElementById('booking'));
-	document.getElementById(tab).appendChild(document.getElementById('stock'));
-	document.getElementById(tab).appendChild(document.getElementById('2048'));
-	document.getElementById(tab).appendChild(document.getElementById('science_council'));
-	document.getElementById(tab).appendChild(document.getElementById('toycar'));
-	document.getElementById(tab).appendChild(document.getElementById('hosa'));
-	document.getElementById(tab).appendChild(document.getElementById('clinic'));
-	var tab = 'allcol3';
-	document.getElementById(tab).appendChild(document.getElementById('ops'));
-	document.getElementById(tab).appendChild(document.getElementById('shopping'));
-	document.getElementById(tab).appendChild(document.getElementById('cuckoos'));
-	document.getElementById(tab).appendChild(document.getElementById('watlock'));
-	document.getElementById(tab).appendChild(document.getElementById('mountain-paths'));
-    document.getElementById(tab).appendChild(document.getElementById('tictactoe'));
-	document.getElementById(tab).appendChild(document.getElementById('tutor'));
-	document.getElementById(tab).appendChild(document.getElementById('encryption'));
-	document.getElementById(tab).appendChild(document.getElementById('basef'));
-	//document.getElementById(tab).appendChild(document.getElementById('basef'));
+<script>
+    document.getElementById("defaultOpen").click();
+    if (window.innerWidth < 400) smalltabs("All");
+    else tabs("All");
+    //openCity(event, "All");
 
-    resetstatus();
-	loadmore("none"); 
-	
- }
- 
-function tab2func(){
-	var tab = 'projcol1';
-	document.getElementById(tab).appendChild(document.getElementById('codia'));
-	document.getElementById(tab).appendChild(document.getElementById('thermo'));
-	document.getElementById(tab).appendChild(document.getElementById('ar'));
-	document.getElementById(tab).appendChild(document.getElementById('mountain-paths'));
-    document.getElementById(tab).appendChild(document.getElementById('2048'));
-    document.getElementById(tab).appendChild(document.getElementById('toycar'));
-
-	var tab = 'projcol2';
-	document.getElementById(tab).appendChild(document.getElementById('crowdmotions'));
-	document.getElementById(tab).appendChild(document.getElementById('booking'));
-	document.getElementById(tab).appendChild(document.getElementById('stock'));
-	document.getElementById(tab).appendChild(document.getElementById('light flicker'));
-	document.getElementById(tab).appendChild(document.getElementById('webid'));
-
-	var tab = 'projcol3';
-	document.getElementById(tab).appendChild(document.getElementById('shopping'));
-	document.getElementById(tab).appendChild(document.getElementById('cuckoos'));
-	document.getElementById(tab).appendChild(document.getElementById('encryption'));
-    document.getElementById(tab).appendChild(document.getElementById('tictactoe'));
-	document.getElementById(tab).appendChild(document.getElementById('good-doggo'));
-
-    resetstatus();
-	moreprojects("none"); 
-	
- }
- 
-function tab3func(){
-	var tab = 'invcol1';
-	document.getElementById(tab).appendChild(document.getElementById('aoms'));
-	document.getElementById(tab).appendChild(document.getElementById('tedx'));
-	document.getElementById(tab).appendChild(document.getElementById('clinic'));
-	document.getElementById(tab).appendChild(document.getElementById('science_council'));
-    var tab = 'invcol2';
-    document.getElementById(tab).appendChild(document.getElementById('ops'));
-	document.getElementById(tab).appendChild(document.getElementById('frc'));
-	document.getElementById(tab).appendChild(document.getElementById('stem'));
-	document.getElementById(tab).appendChild(document.getElementById('hosa'));
-	var tab = 'invcol3';
-	document.getElementById(tab).appendChild(document.getElementById('watlock'));
-	document.getElementById(tab).appendChild(document.getElementById('tutor'));
-	document.getElementById(tab).appendChild(document.getElementById('basef'));
-
-    resetstatus();
-	moreinvolvements("none"); 
-}
- 
-function smalltab1(){
-	var tab = 'allcol1';
-    document.getElementById(tab).appendChild(document.getElementById('aoms'));
-    document.getElementById(tab).appendChild(document.getElementById('ops'));
-    document.getElementById(tab).appendChild(document.getElementById('codia'));
-	document.getElementById(tab).appendChild(document.getElementById('frc'));
-	document.getElementById(tab).appendChild(document.getElementById('booking'));
-	document.getElementById(tab).appendChild(document.getElementById('crowdmotions'));
-	document.getElementById(tab).appendChild(document.getElementById('stock'));
-	document.getElementById(tab).appendChild(document.getElementById('cuckoos'));
-	document.getElementById(tab).appendChild(document.getElementById('shopping'));
-	document.getElementById(tab).appendChild(document.getElementById('thermo'));
-	document.getElementById(tab).appendChild(document.getElementById('ar'));
-	document.getElementById(tab).appendChild(document.getElementById('tedx'));
-	document.getElementById(tab).appendChild(document.getElementById('watlock'));
-	document.getElementById(tab).appendChild(document.getElementById('2048'));
-	document.getElementById(tab).appendChild(document.getElementById('tutor'));
-	document.getElementById(tab).appendChild(document.getElementById('mountain-paths'));
-	document.getElementById(tab).appendChild(document.getElementById('stem'));
-	document.getElementById(tab).appendChild(document.getElementById('light flicker'));
-	document.getElementById(tab).appendChild(document.getElementById('science_council'));
-	document.getElementById(tab).appendChild(document.getElementById('toycar'));
-	document.getElementById(tab).appendChild(document.getElementById('hosa'));
-	document.getElementById(tab).appendChild(document.getElementById('webid'));
-	document.getElementById(tab).appendChild(document.getElementById('clinic'));
-	document.getElementById(tab).appendChild(document.getElementById('encryption'));
-	document.getElementById(tab).appendChild(document.getElementById('good-doggo'));
-	document.getElementById(tab).appendChild(document.getElementById('basef'));
-
-    resetstatus();
-    loadmore("none"); 
-	
- }
- 
-function smalltab2(){
-	var tab = 'projcol1';
-	document.getElementById(tab).appendChild(document.getElementById('codia'));
-	document.getElementById(tab).appendChild(document.getElementById('booking'));
-	document.getElementById(tab).appendChild(document.getElementById('crowdmotions'));
-	document.getElementById(tab).appendChild(document.getElementById('stock'));
-	document.getElementById(tab).appendChild(document.getElementById('cuckoos'));
-	document.getElementById(tab).appendChild(document.getElementById('shopping'));
-	document.getElementById(tab).appendChild(document.getElementById('thermo'));
-	document.getElementById(tab).appendChild(document.getElementById('ar'));
-	document.getElementById(tab).appendChild(document.getElementById('2048'));
-    document.getElementById(tab).appendChild(document.getElementById('tictactoe'));
-	document.getElementById(tab).appendChild(document.getElementById('mountain-paths'));
-	document.getElementById(tab).appendChild(document.getElementById('light flicker'));
-	document.getElementById(tab).appendChild(document.getElementById('toycar'));
-	document.getElementById(tab).appendChild(document.getElementById('webid'));
-	document.getElementById(tab).appendChild(document.getElementById('encryption'));
-	document.getElementById(tab).appendChild(document.getElementById('good-doggo'));
-
-    resetstatus();
-    moreprojects("none"); 
-	
- }
- 
- function smalltab3(){
-	var tab = 'invcol1';
-    document.getElementById(tab).appendChild(document.getElementById('aoms'));
-    document.getElementById(tab).appendChild(document.getElementById('codia'));
-	document.getElementById(tab).appendChild(document.getElementById('frc'));
-	document.getElementById(tab).appendChild(document.getElementById('tedx'));
-	document.getElementById(tab).appendChild(document.getElementById('watlock'));
-	document.getElementById(tab).appendChild(document.getElementById('tutor'));
-	document.getElementById(tab).appendChild(document.getElementById('stem'));
-	document.getElementById(tab).appendChild(document.getElementById('science_council'));
-	document.getElementById(tab).appendChild(document.getElementById('hosa'));
-	document.getElementById(tab).appendChild(document.getElementById('clinic'));
-	document.getElementById(tab).appendChild(document.getElementById('basef'));
-
-     resetstatus();
-     moreinvolvements("none"); 
-}
-
-function loadmore(status) {
-    document.getElementById("light flicker").style.display = status; 
-	document.getElementById("mountain-paths").style.display = status; 
-	document.getElementById("webid").style.display = status; 
-	document.getElementById("toycar").style.display = status; 
-	document.getElementById("encryption").style.display = status;
-	document.getElementById("good-doggo").style.display = status;
-	document.getElementById("2048").style.display = status; 
-	document.getElementById("toycar").style.display = status;
-    document.getElementById("tictactoe").style.display = status;
-
-    document.getElementById("tedx").style.display = status; 
-	document.getElementById("stem").style.display = status; 
-	document.getElementById("clinic").style.display = status; 
-	document.getElementById("science_council").style.display = status; 
-	document.getElementById("tutor").style.display = status;
-	document.getElementById("basef").style.display = status;
-	document.getElementById("hosa").style.display = status;
-}
- 
-function moreprojects(status){
-	document.getElementById("light flicker").style.display = status; 
-	document.getElementById("mountain-paths").style.display = status; 
-	document.getElementById("webid").style.display = status; 
-	document.getElementById("toycar").style.display = status; 
-	document.getElementById("encryption").style.display = status;
-	document.getElementById("good-doggo").style.display = status;
-	document.getElementById("2048").style.display = status; 
-	document.getElementById("toycar").style.display = status;
-    document.getElementById("tictactoe").style.display = status;
-    document.getElementById("stock").style.display = status;
-    document.getElementById("ar").style.display = status;
-}
-
-function moreinvolvements(status) {
-	document.getElementById("stem").style.display = status; 
-	document.getElementById("clinic").style.display = status; 
-	document.getElementById("science_council").style.display = status; 
-	document.getElementById("basef").style.display = status;
-	document.getElementById("hosa").style.display = status;
-}
-
-function resetstatus() {
-    var all = document.getElementsByTagName("a");
-
-    for (var i=0, max=all.length; i < max; i++) {
-        all[i].style.display = "block"; 
+    function tabs(i) {
+        if (i == "All") tab1func();
+        else if (i == "Projects") tab2func();
+        else if (i == 'Involvements') tab3func();
     }
-}
- 
-function button1(){ 
-	loadmore("block");
-}
- 
-function button2(){
-	moreprojects("block"); 
-}
 
-function button3(){
-	moreinvolvements("block"); 
-}
- 
-function openCity(evt, cityName) {
-	var i, tabcontent, tablinks;
-	tabcontent = document.getElementsByClassName("tabcontent");
-	for (i = 0; i < tabcontent.length; i++) {
-		tabcontent[i].style.display = "none";
-	}
-	tablinks = document.getElementsByClassName("tablinks");
-	for (i = 0; i < tablinks.length; i++) {
-		tablinks[i].className = tablinks[i].className.replace(" active", "");
-	}
-	document.getElementById(cityName).style.display = "block";
-	evt.currentTarget.className += " active";
-	if (window.innerWidth < 400) smalltabs(cityName);
-	else tabs(cityName); 
+    function smalltabs(i) {
+        if (i == "All") smalltab1();
+        else if (i == "Projects") smalltab2();
+        else if (i == 'Involvements') smalltab3();
+    }
 
-}
- </script>
- 
+    function tab1func() {
+        var tab = 'allcol1';
+        document.getElementById(tab).appendChild(document.getElementById('codia'));
+        document.getElementById(tab).appendChild(document.getElementById('frc'));
+        document.getElementById(tab).appendChild(document.getElementById('thermo'));
+        document.getElementById(tab).appendChild(document.getElementById('ar'));
+        document.getElementById(tab).appendChild(document.getElementById('tedx'));
+        document.getElementById(tab).appendChild(document.getElementById('webid'));
+        document.getElementById(tab).appendChild(document.getElementById('stem'));
+        document.getElementById(tab).appendChild(document.getElementById('good-doggo'));
+        document.getElementById(tab).appendChild(document.getElementById('light flicker'));
+        var tab = 'allcol2';
+        document.getElementById(tab).appendChild(document.getElementById('aoms'));
+        document.getElementById(tab).appendChild(document.getElementById('crowdmotions'));
+        document.getElementById(tab).appendChild(document.getElementById('booking'));
+        document.getElementById(tab).appendChild(document.getElementById('stock'));
+        document.getElementById(tab).appendChild(document.getElementById('2048'));
+        document.getElementById(tab).appendChild(document.getElementById('science_council'));
+        document.getElementById(tab).appendChild(document.getElementById('toycar'));
+        document.getElementById(tab).appendChild(document.getElementById('hosa'));
+        document.getElementById(tab).appendChild(document.getElementById('clinic'));
+        var tab = 'allcol3';
+        document.getElementById(tab).appendChild(document.getElementById('ops'));
+        document.getElementById(tab).appendChild(document.getElementById('shopping'));
+        document.getElementById(tab).appendChild(document.getElementById('cuckoos'));
+        document.getElementById(tab).appendChild(document.getElementById('watlock'));
+        document.getElementById(tab).appendChild(document.getElementById('mountain-paths'));
+        document.getElementById(tab).appendChild(document.getElementById('tictactoe'));
+        document.getElementById(tab).appendChild(document.getElementById('tutor'));
+        document.getElementById(tab).appendChild(document.getElementById('encryption'));
+        document.getElementById(tab).appendChild(document.getElementById('basef'));
+        //document.getElementById(tab).appendChild(document.getElementById('basef'));
+
+        resetstatus();
+        loadmore("none");
+
+    }
+
+    function tab2func() {
+        var tab = 'projcol1';
+        document.getElementById(tab).appendChild(document.getElementById('codia'));
+        document.getElementById(tab).appendChild(document.getElementById('thermo'));
+        document.getElementById(tab).appendChild(document.getElementById('ar'));
+        document.getElementById(tab).appendChild(document.getElementById('mountain-paths'));
+        document.getElementById(tab).appendChild(document.getElementById('2048'));
+        document.getElementById(tab).appendChild(document.getElementById('toycar'));
+
+        var tab = 'projcol2';
+        document.getElementById(tab).appendChild(document.getElementById('crowdmotions'));
+        document.getElementById(tab).appendChild(document.getElementById('booking'));
+        document.getElementById(tab).appendChild(document.getElementById('stock'));
+        document.getElementById(tab).appendChild(document.getElementById('light flicker'));
+        document.getElementById(tab).appendChild(document.getElementById('webid'));
+
+        var tab = 'projcol3';
+        document.getElementById(tab).appendChild(document.getElementById('shopping'));
+        document.getElementById(tab).appendChild(document.getElementById('cuckoos'));
+        document.getElementById(tab).appendChild(document.getElementById('encryption'));
+        document.getElementById(tab).appendChild(document.getElementById('tictactoe'));
+        document.getElementById(tab).appendChild(document.getElementById('good-doggo'));
+
+        resetstatus();
+        moreprojects("none");
+
+    }
+
+    function tab3func() {
+        var tab = 'invcol1';
+        document.getElementById(tab).appendChild(document.getElementById('aoms'));
+        document.getElementById(tab).appendChild(document.getElementById('tedx'));
+        document.getElementById(tab).appendChild(document.getElementById('clinic'));
+        document.getElementById(tab).appendChild(document.getElementById('science_council'));
+        var tab = 'invcol2';
+        document.getElementById(tab).appendChild(document.getElementById('ops'));
+        document.getElementById(tab).appendChild(document.getElementById('frc'));
+        document.getElementById(tab).appendChild(document.getElementById('stem'));
+        document.getElementById(tab).appendChild(document.getElementById('hosa'));
+        var tab = 'invcol3';
+        document.getElementById(tab).appendChild(document.getElementById('watlock'));
+        document.getElementById(tab).appendChild(document.getElementById('tutor'));
+        document.getElementById(tab).appendChild(document.getElementById('basef'));
+
+        resetstatus();
+        moreinvolvements("none");
+    }
+
+    function smalltab1() {
+        var tab = 'allcol1';
+        document.getElementById(tab).appendChild(document.getElementById('aoms'));
+        document.getElementById(tab).appendChild(document.getElementById('ops'));
+        document.getElementById(tab).appendChild(document.getElementById('codia'));
+        document.getElementById(tab).appendChild(document.getElementById('frc'));
+        document.getElementById(tab).appendChild(document.getElementById('booking'));
+        document.getElementById(tab).appendChild(document.getElementById('crowdmotions'));
+        document.getElementById(tab).appendChild(document.getElementById('stock'));
+        document.getElementById(tab).appendChild(document.getElementById('cuckoos'));
+        document.getElementById(tab).appendChild(document.getElementById('shopping'));
+        document.getElementById(tab).appendChild(document.getElementById('thermo'));
+        document.getElementById(tab).appendChild(document.getElementById('ar'));
+        document.getElementById(tab).appendChild(document.getElementById('tedx'));
+        document.getElementById(tab).appendChild(document.getElementById('watlock'));
+        document.getElementById(tab).appendChild(document.getElementById('2048'));
+        document.getElementById(tab).appendChild(document.getElementById('tutor'));
+        document.getElementById(tab).appendChild(document.getElementById('mountain-paths'));
+        document.getElementById(tab).appendChild(document.getElementById('stem'));
+        document.getElementById(tab).appendChild(document.getElementById('light flicker'));
+        document.getElementById(tab).appendChild(document.getElementById('science_council'));
+        document.getElementById(tab).appendChild(document.getElementById('toycar'));
+        document.getElementById(tab).appendChild(document.getElementById('hosa'));
+        document.getElementById(tab).appendChild(document.getElementById('webid'));
+        document.getElementById(tab).appendChild(document.getElementById('clinic'));
+        document.getElementById(tab).appendChild(document.getElementById('encryption'));
+        document.getElementById(tab).appendChild(document.getElementById('good-doggo'));
+        document.getElementById(tab).appendChild(document.getElementById('basef'));
+
+        resetstatus();
+        loadmore("none");
+
+    }
+
+    function smalltab2() {
+        var tab = 'projcol1';
+        document.getElementById(tab).appendChild(document.getElementById('codia'));
+        document.getElementById(tab).appendChild(document.getElementById('booking'));
+        document.getElementById(tab).appendChild(document.getElementById('crowdmotions'));
+        document.getElementById(tab).appendChild(document.getElementById('stock'));
+        document.getElementById(tab).appendChild(document.getElementById('cuckoos'));
+        document.getElementById(tab).appendChild(document.getElementById('shopping'));
+        document.getElementById(tab).appendChild(document.getElementById('thermo'));
+        document.getElementById(tab).appendChild(document.getElementById('ar'));
+        document.getElementById(tab).appendChild(document.getElementById('2048'));
+        document.getElementById(tab).appendChild(document.getElementById('tictactoe'));
+        document.getElementById(tab).appendChild(document.getElementById('mountain-paths'));
+        document.getElementById(tab).appendChild(document.getElementById('light flicker'));
+        document.getElementById(tab).appendChild(document.getElementById('toycar'));
+        document.getElementById(tab).appendChild(document.getElementById('webid'));
+        document.getElementById(tab).appendChild(document.getElementById('encryption'));
+        document.getElementById(tab).appendChild(document.getElementById('good-doggo'));
+
+        resetstatus();
+        moreprojects("none");
+
+    }
+
+    function smalltab3() {
+        var tab = 'invcol1';
+        document.getElementById(tab).appendChild(document.getElementById('aoms'));
+        document.getElementById(tab).appendChild(document.getElementById('codia'));
+        document.getElementById(tab).appendChild(document.getElementById('frc'));
+        document.getElementById(tab).appendChild(document.getElementById('tedx'));
+        document.getElementById(tab).appendChild(document.getElementById('watlock'));
+        document.getElementById(tab).appendChild(document.getElementById('tutor'));
+        document.getElementById(tab).appendChild(document.getElementById('stem'));
+        document.getElementById(tab).appendChild(document.getElementById('science_council'));
+        document.getElementById(tab).appendChild(document.getElementById('hosa'));
+        document.getElementById(tab).appendChild(document.getElementById('clinic'));
+        document.getElementById(tab).appendChild(document.getElementById('basef'));
+
+        resetstatus();
+        moreinvolvements("none");
+    }
+
+    function loadmore(status) {
+        document.getElementById("light flicker").style.display = status;
+        document.getElementById("mountain-paths").style.display = status;
+        document.getElementById("webid").style.display = status;
+        document.getElementById("toycar").style.display = status;
+        document.getElementById("encryption").style.display = status;
+        document.getElementById("good-doggo").style.display = status;
+        document.getElementById("2048").style.display = status;
+        document.getElementById("toycar").style.display = status;
+        document.getElementById("tictactoe").style.display = status;
+
+        document.getElementById("tedx").style.display = status;
+        document.getElementById("stem").style.display = status;
+        document.getElementById("clinic").style.display = status;
+        document.getElementById("science_council").style.display = status;
+        document.getElementById("tutor").style.display = status;
+        document.getElementById("basef").style.display = status;
+        document.getElementById("hosa").style.display = status;
+    }
+
+    function moreprojects(status) {
+        document.getElementById("light flicker").style.display = status;
+        document.getElementById("mountain-paths").style.display = status;
+        document.getElementById("webid").style.display = status;
+        document.getElementById("toycar").style.display = status;
+        document.getElementById("encryption").style.display = status;
+        document.getElementById("good-doggo").style.display = status;
+        document.getElementById("2048").style.display = status;
+        document.getElementById("toycar").style.display = status;
+        document.getElementById("tictactoe").style.display = status;
+        document.getElementById("stock").style.display = status;
+        document.getElementById("ar").style.display = status;
+    }
+
+    function moreinvolvements(status) {
+        document.getElementById("stem").style.display = status;
+        document.getElementById("clinic").style.display = status;
+        document.getElementById("science_council").style.display = status;
+        document.getElementById("basef").style.display = status;
+        document.getElementById("hosa").style.display = status;
+    }
+
+    function resetstatus() {
+        var all = document.getElementsByTagName("a");
+
+        for (var i = 0, max = all.length; i < max; i++) {
+            all[i].style.display = "block";
+        }
+    }
+
+    function button1() {
+        loadmore("block");
+    }
+
+    function button2() {
+        moreprojects("block");
+    }
+
+    function button3() {
+        moreinvolvements("block");
+    }
+
+    function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+        if (window.innerWidth < 400) smalltabs(cityName);
+        else tabs(cityName);
+
+    }
+</script>
+
