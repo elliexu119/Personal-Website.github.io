@@ -193,7 +193,7 @@ function popupSetup(){
                 <h2>' + keys[i].skills + '</h2>\
                 <h2 style = "font-weight: lighter">' + keys[i].date + '</h2>\
                 <img> </img>\
-                <p id = "modalp"> </p>';
+                <p id = "'+ keys[i].id + 'modalp"> </p>';
 
         for (var j = 0; j < keys[i].points.length; j++){
            // console.log(keys[i].points[j]); 
@@ -203,6 +203,9 @@ function popupSetup(){
         content += '</div>\
          </div>';
          $("#popup").append(content);
+
+         $("#" + keys[i].id + "modalp").load('https://raw.githubusercontent.com/elliexu119/Personal-Website/master/october%2030%2C%202020/test.html');
+
 
          
     }
