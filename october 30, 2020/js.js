@@ -1,4 +1,3 @@
-
 var entries;
 $.getJSON("https://raw.githubusercontent.com/elliexu119/Personal-Website/master/october%2030%2C%202020/projects.json", function(result){
     $.each(result, function(i, field){
