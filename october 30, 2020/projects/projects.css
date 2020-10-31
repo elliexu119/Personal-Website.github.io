@@ -14,6 +14,11 @@
     object-fit: cover;
 }
 
+.projectContainer img:hover{
+    transform: scale(1.05);
+
+}
+
 .margin {
     padding-left:10%; 
     padding-right:10%;
