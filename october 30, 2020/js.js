@@ -135,19 +135,12 @@ function popupSetup(){
                 <h1>'+ keys[i].name + '</h1>\
                 <h2>' + keys[i].skills + '</h2>\
                 <h2 style = "font-weight: lighter">' + keys[i].date + '</h2>\
-                <img> </img>\
-                <p id = "'+ keys[i].id + 'modalp"> </p>';
-
-        for (var j = 0; j < keys[i].points.length; j++){
-           // console.log(keys[i].points[j]); 
-            content += '<p>'+ keys[i].points[j] + '<p>';
-        }
-        
-        content += '</div>\
-         </div>';
+                <div id = "'+ keys[i].id + 'modalp"> </div>\
+                </div>\
+            </div>';
          $("#popup").append(content);
 
-         $("#" + keys[i].id + "modalp").load('https://raw.githubusercontent.com/elliexu119/Personal-Website/master/october%2030%2C%202020/test.html');
+         $("#" + keys[i].id + "modalp").load('https://raw.githubusercontent.com/elliexu119/Personal-Website/master/october%2030%2C%202020/projects/codia.html');
 
 
          

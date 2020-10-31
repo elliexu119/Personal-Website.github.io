@@ -16,7 +16,22 @@
 
 </head>
 <body> 
-    <p> HEY </p>
+    <div id= codiaModal class="modal">
+        <div class="modal-content">
+            <span class="close" id = codiaClose>&times;</span>
+            <h1>CODIA</h1>
+            <h2>' + keys[i].skills + '</h2>
+            <h2 style = "font-weight: lighter">' + keys[i].date + '</h2>
+            <img> </img>\
+            <p id = "'+ keys[i].id + 'modalp"> </p>
+
+    for (var j = 0; j < keys[i].points.length; j++){
+       // console.log(keys[i].points[j]); 
+        content += '<p>'+ keys[i].points[j] + '<p>';
+    }
+    
+    content += '</div>\
+     </div>';
 </body>
 
 </html>
