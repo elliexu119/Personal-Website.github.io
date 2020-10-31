@@ -35,3 +35,21 @@
     margin-top: 100px; 
     color: #ff4242;
 }
+
+.redContainer {
+    padding: 5%;
+    background: #ff4242; 
+}
+
+.redContainer h1 {
+    font-size: 23px;
+    text-align: center;
+    margin-top: 100px; 
+    color: white;
+}
+
+.redContainer p {
+    text-align: left; 
+    font-size: 17px;
+    color: white;
+}
