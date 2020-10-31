@@ -1,7 +1,7 @@
 {
 "projects" : [
     {
-        "id": "codia", "name":"CODIA", "icon": "../portfolio-pictures/icon%20v2/codia.png", "category" : "Electrical · Mechanical · Software",
+        "id": "codia", "name":"CODIA - Computer Operated Intelligent Assistant", "icon": "../portfolio-pictures/icon%20v2/codia.png", "category" : "Electrical · Mechanical · Software",
         "skills" : "Inventor, Arduino, 3D printing, PCB Design, Shop Skills", "date": "2019"
     },
 
