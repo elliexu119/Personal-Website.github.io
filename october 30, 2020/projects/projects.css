@@ -12,6 +12,12 @@
     width: auto;
 }
 
+.margin {
+    margin-left:10%; 
+    margin-right:10%;
+
+
+}
 p {
     text-align: center; 
     font-size: 20px;
