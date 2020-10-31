@@ -58,8 +58,8 @@ img {
 }
 
 .imgContainer {
-    position = relative;
-    width: 100%;
+    position: relative;
+    width:100%;
 }
 
 .imgContainer box {
@@ -84,6 +84,7 @@ img {
     color: #ff4242;
     
     cursor: pointer;
+    outline: none;
     
 }
 
