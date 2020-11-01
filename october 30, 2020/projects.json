@@ -51,12 +51,7 @@
     },
 
     {
-        "id":"mountain-paths", "name":"Mountain Paths", "icon": "../portfolio-pictures/icon%20v2/mountain.png", "category" : "Software",
-        "skills" : "Java", "date": "2018"
-    },
-
-    {
-        "id":"webid", "name":"Web ID", "icon": "../portfolio-pictures/icon%20v2/candy.png", "category" : "Electrical",
+        "id":"webid", "name":"Web ID", "icon": "../portfolio-pictures/icon%20v2/candy.png", "category" : "Electrical · Software",
         "skills" : "Arduino, HTML", "date": "2019"
     },
 

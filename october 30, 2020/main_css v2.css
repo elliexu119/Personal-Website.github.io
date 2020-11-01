@@ -59,7 +59,9 @@ img {
 
 .imgContainer {
     position: relative;
-    width:100%;
+    width:auto;
+    display:cover;
+
 }
 
 .imgContainer box {
@@ -74,7 +76,7 @@ img {
 .imgContainer button {
     margin-top: 5%;
     margin-left: 10%; 
-    padding: 20px;
+    padding: 5%;
     
     font-size: 18px;
     font-weight: bold; 
@@ -108,6 +110,7 @@ img {
   width: 300px;
   padding: 10px;
   margin-left: 15px;
+  margin-bottom: 15px;
   height: 500px; 
   background-image: url('../portfolio-pictures/backgrounds/skills background.png');
   background-size: 150%;
