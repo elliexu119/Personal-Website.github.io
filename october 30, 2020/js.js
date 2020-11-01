@@ -108,7 +108,7 @@ function smalltab1() {
 }
 
 function loadmore(status) {
-    var hidden = ['light-flicker', 'mountain-paths', 'webid', 'toycar', 'encryption', 'good-doggo', '2048', 'toycar', 'tictactoe'];
+    var hidden = ['light-flicker', 'webid', 'toycar', 'encryption', 'good-doggo', '2048', 'toycar', 'tictactoe'];
     for (var i = 0; i < hidden.length; i ++){
         //console.log(hidden[i]);
         document.getElementById(hidden[i]).style.display = status; 
