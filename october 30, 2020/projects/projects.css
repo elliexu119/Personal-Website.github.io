@@ -1,5 +1,9 @@
 /* ff4242 */
 
+body {
+    font-family: 'Montserrat', sans-serif;
+
+}
 
 .projectContainer {
     display: flex;
