@@ -140,7 +140,9 @@ function popupSetup(){
             </div>';
          $("#popup").append(content);
 
-         $("#" + keys[i].id + "modalp").load('https://raw.githubusercontent.com/elliexu119/Personal-Website/master/october%2030%2C%202020/projects/'+ keys[i].id + '.html');
+         $("#" + keys[i].id + "modalp").load('https://raw.githubusercontent.com/elliexu119/Personal-Website/master/october%2030%2C%202020/projects/'+ keys[i].id + '.html', function() {
+            $(this).trigger("pagecreate");
+        });
          //$("#" + keys[i].id + "modalp").load('https://raw.githubusercontent.com/elliexu119/Personal-Website/master/october%2030%2C%202020/'+ keys[i].id + '.html');
          
     }
