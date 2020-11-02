@@ -1,5 +1,5 @@
 var entries;
-$.getJSON("https://raw.githubusercontent.com/elliexu119/Personal-Website/master/october%2030%2C%202020/projects.json", function(result){
+$.getJSON("https://raw.githubusercontent.com/elliexu119/elliexu119.github.io/pre-move/october%2030%2C%202020/projects.json", function(result){
     $.each(result, function(i, field){
     entries = field; 
     });
@@ -142,7 +142,7 @@ function popupSetup(){
          $("#popup").append(content);
         
          //$('head').append( $('<link rel="stylesheet" type="text/css" />').attr('href', './projects/'+ keys[i].id + '.css'));
-         $("#" + keys[i].id + "modalp").load('https://raw.githubusercontent.com/elliexu119/Personal-Website/master/october%2030%2C%202020/projects/'+ keys[i].id + '.html');
+         $("#" + keys[i].id + "modalp").load('https://raw.githubusercontent.com/elliexu119/elliexu119.github.io/pre-move/october%2030%2C%202020/projects/'+ keys[i].id + '.html');
          // $('head').append( $('<link rel="stylesheet" type="text/css" />').attr('href', './projects/twitter.css'));
          //$("#" + keys[i].id + "modalp").load('https://raw.githubusercontent.com/elliexu119/Personal-Website/master/october%2030%2C%202020/projects/twitter.html');
         
