@@ -18,44 +18,4 @@
     transform: scale(1.05);
 
 }
-
-.margin {
-    padding-left:10%; 
-    padding-right:10%;
-    padding-bottom: 10%
-}
-
-.margin p {
-    text-align: center; 
-    font-size: 17px;
-}
-
-p.left{ 
-    text-align:left; 
-    font-size:17px;
-}
-
-.margin h1 {
-    font-size: 23px;
-    text-align: center;
-    margin-top: 100px; 
-    color: #ff4242;
-}
-
-.redContainer {
-    padding: 5%;
-    background: #ff4242; 
-}
-
-.redContainer h1 {
-    font-size: 23px;
-    text-align: center;
-    margin-top: 100px; 
-    color: white;
-}
-
-.redContainer p {
-    text-align: left; 
-    font-size: 17px;
-    color: white;
-}
+s
