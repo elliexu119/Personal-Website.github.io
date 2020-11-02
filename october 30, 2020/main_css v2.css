@@ -1,12 +1,13 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
+    overflow: scroll;
 
 }
 
 .sidenav {
   height: 100%;
-  width: 300px;
+  width: 280px;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -14,6 +15,7 @@ body {
   background-color: #f7f7f5;
   overflow-x: hidden;
   padding-top: 20px;
+  box-shadow: 0px 0px 6px #9A9999, 0px 0px 10px #9A9999;
 }
 
 .sidenav title {
@@ -39,8 +41,9 @@ body {
 }
 
 .main {
-  margin-left: 300px; /* Same as the width of the sidenav */
+  margin-left: 280px; /* Same as the width of the sidenav */
   font-size: 28px; /* Increased text to enable scrolling */
+  min-width: 1000px;
 
 }
 
@@ -60,8 +63,7 @@ img {
 .imgContainer {
     position: relative;
     width:auto;
-    display:cover;
-
+    display:cover;  
 }
 
 .imgContainer box {
@@ -69,6 +71,15 @@ img {
     top: 20%;
     left: 50%;
     background: rgba(225, 225, 225, 0.57); 
+    width: 48%; 
+    height: 80%; 
+}
+
+.imgContainer box2{
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    background: rgba(225, 225, 225, 0); 
     width: 48%; 
     height: 80%; 
 }
@@ -327,19 +338,21 @@ img {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
-    padding-top: 5%; /* Location of the box */
-    padding-bottom:5%;
-    padding-left: 20%;
-    padding-right: 20%;
+
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
+
     overflow: scroll; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-    padding-left: 50px;
-    padding-right: 50px;
+     
+    padding-top: 5%; 
+    padding-bottom:5%;
+    padding-left: 100px;
+    padding-right: 100px; 
+
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
   }
 
   .modal h1 {
@@ -366,6 +379,8 @@ img {
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
+    min-width: 1000px;
+    max-width:1500px;
     width: 80%;
   }
   
@@ -383,3 +398,66 @@ img {
     text-decoration: none;
     cursor: pointer;
   }
+
+.aboutMebox {
+    width:850px; 
+    height: 700px; 
+    min-width: 850px;
+    min-height: 700px;
+    padding-left:5%; 
+    padding-right: 5%;
+    background-color: #e3e3e3;
+}
+
+.aboutMeimageBox {
+    width:850px; 
+    height: 700px;
+    min-width: 850px;
+    min-height: 700px;
+    padding: 0;
+    margin: 0;
+}
+
+.aboutMeprojectContainer {
+    display: flex;
+  justify-content: center;
+}
+
+.aboutMeprojectContainer img {
+    /*max-height: 400px;*/
+    width: 100%; 
+    height: 100%;
+    object-fit: cover;
+}
+
+.aboutMeprojectContainer h1 {
+    text-align: left;
+    font-size: 50px; 
+    color:gray;
+    font-style: italic;
+    font-weight: lighter;
+    padding-top: 10%;
+}
+
+.aboutMeprojectContainer p {
+    font-size: 20px; 
+    color: gray; 
+    font-weight: lighter;
+}
+
+.contactMe h1{
+    text-align: left; 
+    color: white; 
+    margin: 0;
+    font-weight: bold;
+}
+
+.contactMe{
+    background-color: #ff4242; 
+    padding: 50px; 
+    margin: 0;
+}
+
+.textBox {
+    min-width: 800px;
+}

@@ -11,7 +11,6 @@ body {
 }
 
 .projectContainer img {
-    padding: 10px;
     /*max-height: 400px;*/
     height: auto;
     width: 300px;

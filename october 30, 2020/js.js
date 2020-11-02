@@ -9,10 +9,11 @@ $.getJSON("https://raw.githubusercontent.com/elliexu119/Personal-Website/master/
     for (const button of buttons) {
     button.addEventListener('click', event => {
             console.log( button.id+'Modal');
+            $('body').css('overflow','hidden');
             document.getElementById( button.id+'Modal').style.display = "block";
-
             document.getElementById(button.id+'Close').onclick = function() {
                 document.getElementById(button.id+'Modal').style.display = "none";
+                $('body').css('overflow','visible');
             }
     });
     }
@@ -139,7 +140,7 @@ function popupSetup(){
                 </div>\
             </div>';
          $("#popup").append(content);
-
+        
          //$('head').append( $('<link rel="stylesheet" type="text/css" />').attr('href', './projects/'+ keys[i].id + '.css'));
          $("#" + keys[i].id + "modalp").load('https://raw.githubusercontent.com/elliexu119/Personal-Website/master/october%2030%2C%202020/projects/'+ keys[i].id + '.html');
          // $('head').append( $('<link rel="stylesheet" type="text/css" />').attr('href', './projects/twitter.css'));
@@ -151,4 +152,3 @@ function popupSetup(){
 }
 
 
-  
