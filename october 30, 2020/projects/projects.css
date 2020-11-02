@@ -48,14 +48,14 @@ h1.this{
 }
 .box {
     width:500px; 
-    height: 200px; 
+    height: 300px; 
     padding-left:5%; 
     padding-right: 5%;
     background-color: #e3e3e3;
 }
 .imageBox {
     width:500px; 
-    height: 200px;
+    height: 300px;
     padding: 0;
     margin: 0;
 }
@@ -67,7 +67,7 @@ h1.this{
 }
 
 .encryption p{
-    text-align: left; 
+    text-align: center; 
     font-size: 17px;
     color: gray; 
     padding-bottom: 2.5%;
@@ -87,6 +87,10 @@ h1.this{
     margin-top: 100px; 
     color: #ff4242;
 
+}
+
+.center p {
+    text-align: center; 
 }
 
 
