@@ -128,13 +128,14 @@ function popupSetup(){
     }
     for (var i = 0; i < keys.length; i++){ //keys.length
         //console.log('modal title ' + keys[i].id + 'Modal'); 
-         var content = '<div id= "'+ keys[i].id + 'Modal' + '" class="modal">\
-            <div class="modal-content">\
-                <span class="close" id = "' + keys[i].id + 'Close' + '">&times;</span>\
-                <h1>'+ keys[i].name + '</h1>\
-                <h2>' + keys[i].skills + '</h2>\
-                <h2 style = "font-weight: lighter">' + keys[i].date + '</h2>\
-                <div id = "'+ keys[i].id + 'modalp"> </div>\
+         var content = '\
+            <div id= "'+ keys[i].id + 'Modal' + '" class="modal">\
+                <div class="modal-content">\
+                    <span class="close" id = "' + keys[i].id + 'Close' + '">&times;</span>\
+                    <h1>'+ keys[i].name + '</h1>\
+                    <h2>' + keys[i].skills + '</h2>\
+                    <h2 style = "font-weight: lighter">' + keys[i].date + '</h2>\
+                    <div id = "'+ keys[i].id + 'modalp"> </div>\
                 </div>\
             </div>';
          $("#popup").append(content);
