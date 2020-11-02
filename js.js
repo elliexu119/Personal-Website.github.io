@@ -50,7 +50,7 @@ function tab1func() {
                 <div class="container">\
                     <img src='+ keys[i].icon +' alt="Avatar" class="image">\
                     <div class="overlay">\
-                        <div class="textbox">\
+                        <div class="textboxPortfolio">\
                             <div class="text">' + keys[i].name + '</div>\
                             <div class="smoltext">'+ keys[i].category +'</div>\
                             <div class="smoltext">Click to see more</div>\
@@ -85,7 +85,7 @@ function smalltab1() {
                 <div class="container">\
                     <img src='+ keys[i].icon +' alt="Avatar" class="image">\
                     <div class="overlay">\
-                        <div class="textbox">\
+                        <div class="textboxPortfolio">\
                             <div class="text">' + keys[i].name + '</div>\
                             <div class="smoltext">'+ keys[i].category +'</div>\
                             <div class="smoltext">Click to see more</div>\

@@ -2,7 +2,6 @@
 body {
     font-family: 'Montserrat', sans-serif;
     overflow: scroll;
-
 }
 
 .sidenav {
@@ -174,21 +173,21 @@ img {
     /*border: 1px solid #ccc;*/
     background-color: #f1f1f1;
 }
-    /* Style the buttons inside the tab */
-    .tab button {
-        display: table-cell;
-        font-family: 'Montserrat';
-        background-color: inherit;
-        float: center;
-        border: none;
-        outline: none;
-        cursor: pointer;
-        padding: 14px 14px;
-        transition: 0.3s;
-        font-size: 1vw;
-        font-weight: bold;
-        color: grey;
-    }
+/* Style the buttons inside the tab */
+.tab button {
+    display: table-cell;
+    font-family: 'Montserrat';
+    background-color: inherit;
+    float: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 14px;
+    transition: 0.3s;
+    font-size: 1vw;
+    font-weight: bold;
+    color: grey;
+}
 
 #defaultOpen, #c2, #c3 { /*for the option tabs*/
     float: left;
@@ -244,7 +243,7 @@ img {
     opacity: .9;
 }
 
-.textbox {
+.textboxPortfolio {
     line-height: 1.5;
     margin: 10px;
     font-family: 'Montserrat';
@@ -252,6 +251,7 @@ img {
     display: block;
     top: 30%;
     text-align: center;
+    background-color: white;
 }
 
 .text {
@@ -297,6 +297,7 @@ img {
 .column {
     max-width: 25%;
     padding: 0 4px;
+    
 }
 
     .column img {
@@ -333,7 +334,7 @@ img {
 }   
 
 
-/*POPUPS*/
+/** POPUPS */
 
 .modal {
     display: none; /* Hidden by default */
@@ -354,7 +355,7 @@ img {
 
     width: 100%; /* Full width */
     height: 100%; /* Full height */
-  }
+  } 
 
   .modal h1 {
     text-align: center; 
@@ -391,7 +392,7 @@ img {
     float: right;
     font-size: 28px;
     font-weight: bold;
-  }
+  } 
   
   .close:hover,
   .close:focus {
