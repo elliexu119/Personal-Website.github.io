@@ -461,3 +461,23 @@ img {
 .textBox {
     min-width: 800px;
 }
+
+.textBox p {
+    text-align: left;
+    font-size: 15px; 
+    color: gray;
+}
+
+.textBox input {
+    height: 40px; 
+    width: 100%;
+}
+
+.textBox button {
+    margin: 20px;
+    background-color: #ff4242;
+    color: white; 
+    font-size: 20px;
+    padding: 10px 30px 10px 30px;
+    border: 0;
+}
