@@ -414,7 +414,7 @@ img {
 .aboutMeimageBox {
     width:850px; 
     height: 700px;
-    min-width: 600;
+    min-width: 600px;
     min-height: 700px;
     padding: 0;
     margin: 0;
