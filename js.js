@@ -44,8 +44,8 @@ function tab1func() {
             number = 1; 
         }
 
-        console.log(keys[i].id + ' ');
-
+        //console.log(keys[i].id + ' ');
+        
         var content = '<button class = "portfolioButton" id='+ keys[i].id +'>\
                 <div class="container">\
                     <img src='+ keys[i].icon +' alt="Avatar" class="image">\
@@ -60,13 +60,28 @@ function tab1func() {
             </button>';
 
         //console.log('key ' + keys[i]);
-
         $("#portfolio").append(content);
 
-        //console.log(document.getElementById(keys[i].name));
+        console.log(document.getElementById(keys[i].name));
         document.getElementById(tab + number).appendChild(document.getElementById(keys[i].id));
         document.getElementById(keys[i].id).style.display = "block";
         number += 1; 
+        /** 
+        //diamond portoflio
+       var content = '\
+            <button class = "portfolioButton" style = "color: white" id='+ keys[i].id +'>\
+                <div class="container">\
+                    <img src='+ keys[i].icon +' alt="Avatar" class="image">\
+                    <div class="overlay">\
+                        <div class="textboxPortfolio">\
+                            <div class="text">' + keys[i].name + '</div>\
+                            <div class="smoltext">'+ keys[i].category +'</div>\
+                            <div class="smoltext">Click to see more</div>\
+                        </div>\
+                    </div>\
+                </div>\
+            </button>';
+        $("#diamondPortfolio").append(content);*/
     }
     loadmore("none");
     popupSetup();

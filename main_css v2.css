@@ -1,7 +1,8 @@
 
-body {
+html, body {
     font-family: 'Montserrat', sans-serif;
     overflow: scroll;
+    display: flex;
 }
 
 .sidenav {
@@ -63,6 +64,13 @@ img {
     position: relative;
     width:auto;
     display:cover;  
+
+    background-image: url("./portfolio-pictures/places%20pictures/peru.JPG");
+    overflow: hidden;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    background-position: center;
 }
 
 .imgContainer box {
