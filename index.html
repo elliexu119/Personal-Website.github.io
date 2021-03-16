@@ -21,6 +21,12 @@
         <hr style="width:75%;height:3px; border-width:0; background-color:#ff4242"; >
         <p style = "padding-bottom:30px"> </p>
         <a style = 'color: #989898;'>Portfolio</a>
+        <div class="sidenavLine">
+            <a onClick= "document.getElementById('skills').scrollIntoView();">Skills</a>
+            <a onClick= "document.getElementById('experiences').scrollIntoView();">Experience</a>
+            <a onClick= "document.getElementById('projects').scrollIntoView();">Projects</a>
+            <a onClick= "document.getElementById('conactMe').scrollIntoView();">Contact Me</a>
+        </div>
         <a href="./about me.html">About Me</a>
       </div>
 
@@ -39,7 +45,7 @@
         </div> 
         
 
-        <h1>SKILLS</h1>
+        <h1 id = 'skills'>SKILLS</h1>
         <div class="rowFrame"id = "outer">
             <row> 
                 <column>
@@ -78,8 +84,142 @@
                 </column>
             </row> 
         </div>
+
+        <h1 id = 'experiences'>EXPERIENCE</h1>
         
-        <h1>PROJECTS</h1>
+        <div class="timeline" >
+
+          <div style = "display: table; "> 
+
+            <!-- <div style = 'display: table-row'> 
+
+              <div style = 'display: table-cell; width: 17.5%'></div>
+                         
+              <div class="timelineContainer">
+                <div class="timelineContent">
+                  <h1>2020</h1>
+                  <h2>Stealth Startup</h2>
+                  <p>Created chrome extension in JavaScript (and jQuery), HTML, & CSS with login authentication to collect user data and connected it to Firebase Firestore. </p>
+                  <p>Wrote the back‑end Python script that computes results from the pulled database data and pushes the outputs back. </p>
+                  <p>Migrated services to MongoDB. </p>
+                  <p>Used Git & agile to collaborate with team</p>
+                </div>
+              </div>
+            </div>  -->
+          
+            <div style = 'display: table-row'> 
+
+                <div class = 'timelinePicContainer' style = 'display: table-cell; width: 17.5%'>
+                  <div class = 'timelinePicContent'>
+                    <img src="./portfolio-pictures/aoms (4).png" alt="FRC Robot">
+                  </div>
+                </div>
+
+
+              <div class="timelineContainer " >
+                <div class="timelineContent">
+                  <h1>2020</h1>
+                  <h2>Ontario Ministry of Health</h2>
+                  <p>Completed multiple excel standardizing scripts in Python using libraries such as Openpyxl & TKinter (GUI).</p>
+                  <p>The product was distributed to customers as exe. </p>
+                  <p>Built a Jira plugin in Java with Maven and Atlassian Plugin SDK using Servlets on Tomcat for the department workflow</p>
+                  <p>Translated VBA macros to python scripts.</p>
+                </div>
+              </div>
+
+            </div>
+
+            <div style = 'display: table-row'> 
+
+              <div style = 'display: table-cell; width: 17.5%'></div>
+
+              <div class="timelineContainer ">
+                <div class="timelineContent">
+                  <h1>2020</h1>
+                  <h2>UWAFT</h2>
+                  <p>Developed a dashboard to display sensor data using Python OOP (i.e. TKinter) and ROSpy.</p>
+                  <p>Collaborated with team using Git version control on bash and agile.</p>
+                </div>
+              </div>
+
+            </div>
+
+            <div style = 'display: table-row'> 
+
+              <div class = 'timelinePicContainer' style = 'display: table-cell; width: 17.5%'>
+                <div class = 'timelinePicContent'>
+                  <img src="./portfolio-pictures/aoms (2).png" alt="FRC Robot">
+                </div>
+              </div>
+            
+              <div class="timelineContainer ">
+                <div class="timelineContent">
+                  <h1>2020</h1>
+                  <h2>AOMS Technologies</h2>
+                  <p>Designed 2 test jigs that involved KiCad schematics & PCB design (using UPDI, SPI, AVRDUDE, Atmel Ice, etc.), SolidWorks
+                      modelling, C++ firmware maintenance for AVR microcontrollers, and error checked 100+ cards. </p>
+                  <p>Wrote analysis\mapping Python program for LoRaWAN‑GPS mapper to obtain product (i.e. gateways) insights.</p>
+                  <p>Created schematic & PCB, soldered, and edited C++ firmware for LoRaWAN‑GPS mapper with EU\USA frequency bands.</p>
+                  <p>Researched, prototyped on Arduino, and created KiCad schematics & PCBs for working CT sensor and lightning sensor.</p>
+                  <p>3D printed parts, conducted lab experiments, and assembled products.</p>
+                </div>
+              </div>
+            </div>
+
+            <div style = 'display: table-row'> 
+
+              <div style = 'display: table-cell; width: 17.5%'></div>
+
+              <div class="timelineContainer ">
+                <div class="timelineContent">
+                  <h1>2019</h1>
+                  <h2>WatLock</h2>
+                  <p>Researched, modelled, and contributed to the airlock hatch door made to withstand Mars conditions on SolidWorks.</p>
+                  <p>Used GrabCAD to collaborate with the team.</p>
+                </div>
+              </div>
+          
+            </div>
+            
+            
+          <div style = 'display: table-row'> 
+
+            <div style = 'display: table-cell; width: 17.5%'></div>
+
+            <div class="timelineContainer ">
+              <div class="timelineContent">
+                <h1>2018</h1>
+                <h2>Wentworth-Halton X-Ray and Ultrasound</h2>
+                <p>Initiated and developed a patient booking software on Java as an alternative to paper bookings.</p>
+                <p>Integrated a GUI with JFrame and ensured multi‑device access by creating an XML database.</p>
+              </div>
+            </div>
+          </div>
+            
+          <div style = 'display: table-row'> 
+
+            <div class = 'timelinePicContainer' style = 'display: table-cell; width: 17.5%'>
+              <div class = 'timelinePicContent'>
+                <img src="./portfolio-pictures/frc robot.jpg" alt="FRC Robot">
+              </div>
+            </div>
+
+            <div class="timelineContainer ">
+              <div class="timelineContent">
+                <h1>2015</h1>
+                <h2>FRC Robotics</h2>
+                <p>Created 2D, 3D, and sheet metal models in AutoCAD & Inventor and stress tested several parts.</p>
+                <p>Produced drawings that applied GD&T principles that were pushed to manufacturing.</p>
+                <p>Built prototypes and mechanisms with the plasma cutter, CNC, lathe, and other tools.</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+        </div>
+        
+        <h1 id = 'projects'>PROJECTS</h1>
         <div class = "overContainer" id = 'portfolio'>
             
             <div id="All" class="tabcontent">
@@ -91,7 +231,7 @@
                 </div>
                 <p> </p>
                 <div class = "rowFrame">
-                    <button class='button' onclick='button1()' id='loadmore1'>Load More</button>
+                    <button class='button' onclick='button1()' id='loadmore1'></button>
                 </div>
             </div>
 
@@ -105,7 +245,7 @@
             </div>
          -->
         
-            <div class="rowFrame" id = "outer" style = "background-image: url('./portfolio-pictures/backgrounds/footer.jpg'); background-position: center; ">
+            <div class="rowFrame" id = "conactMe" style = "background-image: url('./portfolio-pictures/backgrounds/footer.jpg'); background-position: center; ">
                 <p style = "height: 100px"> </p>
                 <row> 
                     <column style = "background: transparent; height: 300px;">
